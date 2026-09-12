@@ -1,0 +1,28 @@
+{
+  "name": "node-production-api-starter",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "dev": "node --watch src/server.js",
+    "start": "node src/server.js",
+    "lint": "eslint .",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "helmet": "^8.3.0",
+    "pino": "^10.3.1",
+    "pino-http": "^11.0.0",
+    "zod": "^4.6.2"
+  },
+  "devDependencies": {
+    "eslint": "^10.10.0",
+    "globals": "^16.4.0",
+    "supertest": "^7.2.2",
+    "vitest": "^5.0.0"
+  }
+}
